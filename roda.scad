@@ -1,0 +1,10 @@
+$fn=220;
+color([1,1,1])difference()
+{
+  cylinder(r=14.5,h=19);
+  translate([0,0,10])difference()
+  {
+   cylinder(r=1.5,h=10.5);
+   translate([1,-2.5,-0.5])cube([5,5,21]); 
+  }
+}

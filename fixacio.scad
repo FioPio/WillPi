@@ -1,0 +1,20 @@
+$fn=70;
+difference()
+{
+  union()
+  {
+    translate([0,2.5])cube([25,17,9.5]);
+    cube([25,22,5]);
+  }
+  //6.5
+  //Forats
+  translate([5,2.5,-1])cylinder(r=0.75,h=8);
+  translate([5,42-22.5,-1])cylinder(r=0.75,h=8);
+  translate([22,2.5,-1])cylinder(r=0.75,h=8);
+  translate([22,42-22.5,-1])cylinder(r=0.75,h=8);
+  translate([-0.1,5,-0.1])cube([50,12,6.6]);
+  translate([22-4.5/2,2.5,5])cube([4.5,2.5,80]);
+  translate([5-4.5/2,2.5,5])cube([4.5,2.5,80]);
+  translate([5-4.5/2,42-25,5])cube([4.5,2.5,80]);
+  translate([22-4.5/2,42-25,5])cube([4.5,2.5,80]);
+}
